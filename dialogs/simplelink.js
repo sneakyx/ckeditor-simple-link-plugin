@@ -12,7 +12,7 @@
 				type: "text",
 				label: "URL",
 				id: "edp-URL",
-				validate: CKEDITOR.dialog.validate.notEmpty( "url cannot be empty." ),
+				validate: CKEDITOR.dialog.validate.notEmpty( "Adresse darf nicht leer sein." ),
         setup: function( element ) {
         	var href = element.getAttribute("href");
         	var isExternalURL = /^(http|https):\/\//;
@@ -51,7 +51,7 @@
         }	
 			}, {
 				type: "html",
-				html: "<p>The Link will be opened in another tab.</p>"
+				html: "<p>Link in einem neuen Tab öffnen.</p>"
 			}]
 		}],
 		onShow: function() {
