@@ -1,7 +1,7 @@
-﻿CKEDITOR.dialog.add("simplelinkDialog", function(editor) {
+CKEDITOR.dialog.add("simplelinkDialog", function(editor) {
 	return {
 		allowedContent: "a[href,target]",
-		title: "Insert Link",
+		title: "Link einfügen",
 		minWidth: 550,
 		minHeight: 100,
 		resizable: CKEDITOR.DIALOG_RESIZE_NONE,
@@ -12,7 +12,7 @@
 				type: "text",
 				label: "URL",
 				id: "edp-URL",
-				validate: CKEDITOR.dialog.validate.notEmpty( "Adresse darf nicht leer sein." ),
+				validate: CKEDITOR.dialog.validate.notEmpty( "Bitte Adresse eingeben." ),
         setup: function( element ) {
         	var href = element.getAttribute("href");
         	var isExternalURL = /^(http|https):\/\//;
@@ -38,7 +38,7 @@
         }				
 			}, {
 				type: "text",
-				label: "Text to display",
+				label: "Anzeigetext",
 				id: "edp-text-display",
         setup: function( element ) {
             this.setValue( element.getText() );
@@ -51,7 +51,7 @@
         }	
 			}, {
 				type: "html",
-				html: "<p>Link in einem neuen Tab öffnen.</p>"
+				html: "<p>Die Seite wird in einem neuen Browserfenster geöffnet.</p>"
 			}]
 		}],
 		onShow: function() {
