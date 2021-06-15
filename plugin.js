@@ -3,7 +3,7 @@ CKEDITOR.plugins.add( 'SimpleLink', {
     init: function( editor ) {
         editor.addCommand( 'simplelink', new CKEDITOR.dialogCommand( 'simplelinkDialog' ) );
         editor.ui.addButton( 'SimpleLink', {
-            label: 'Add a link',
+            label: 'Einen Link einfügen',
             icons: 'simplelink',
             command: 'simplelink'
         });
