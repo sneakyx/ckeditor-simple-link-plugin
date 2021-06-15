@@ -10,7 +10,7 @@ CKEDITOR.dialog.add("simplelinkDialog", function(editor) {
 			label: "SimpleLink",
 			elements:[{
 				type: "text",
-				label: "URL",
+				label: "Adresse",
 				id: "edp-URL",
 				validate: CKEDITOR.dialog.validate.notEmpty( "Bitte Adresse eingeben." ),
         setup: function( element ) {
